@@ -1,0 +1,56 @@
+﻿body 
+{
+}
+
+    div#ContainerDiv
+{
+    width: 1060px;
+    height: 1000px;
+    border: 3px solid green;
+}
+    div#ContainerDiv1
+{
+    float: left;
+    background: #ff006e;
+}
+    div#ContainerDiv2 
+{
+    float: left;
+    background: #00c1ff;
+    width: calc(100% - 33px);
+    height:500px;
+}
+    div#UstDiv
+{
+    height: 100px;
+    width: 999px;
+}
+    div#UstAltDiv
+{
+        height:50px;
+        width:999px;
+}
+    div#MiniKutu1 
+{
+        height:230px;
+        width:230px;
+        float:left;
+}
+    div#AltMenuDiv
+{
+        height:470px;
+        width:999px;
+        float:left;
+}
+    div.AnasayfaDiv1
+{
+    border: 3px solid blue;
+    margin: 10px;
+    background:#fffa00;
+}
+    div.AnasayfaDiv2
+{
+        border: 3px solid blue;
+        margin:10px;
+        background: #b6ff00;
+}
