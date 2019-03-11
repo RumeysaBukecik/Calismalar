@@ -1,0 +1,54 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#buton").click(function () {
+                var degisken1 = $("#article1").text();
+                var degisken2 = $("#kutu1").val();
+                alert(degisken1 + degisken2);
+            });
+        })
+    </script>
+
+    <style>
+        .container {
+            border: 2px solid #00ba18;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+
+        .sectionbolum {
+            background-color: #f2f3ca;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px #007d7d solid;
+        }
+
+        button {
+            width: 200px;
+            height: 80px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        
+        <section class="sectionbolum">
+            <article id="article1"> Slm. </article>
+            <input id="kutu1" title="Bilmem ne." value="As." />
+            <button id="buton"> Tık </button>
+        </section>
+    </main>
+</body>
+</html>
