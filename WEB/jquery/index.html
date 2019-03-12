@@ -10,6 +10,12 @@
                 var degisken2 = $("#kutu1").val();
                 alert(degisken1 + degisken2);
             });
+            $("#kutu1").focus(function () {
+                $(this).css("background-color", "#cccccc");
+            });
+            $("#kutu1").blur(function () {
+                $(this).css("background-color", "#ffffff");
+            });
         })
     </script>
 
@@ -46,8 +52,12 @@
         
         <section class="sectionbolum">
             <article id="article1"> Slm. </article>
-            <input id="kutu1" title="Bilmem ne." value="As." />
             <button id="buton"> Tık </button>
+        </section>
+        <section class="sectionbolum">
+            <input id="kutu1" title="Bilmem ne." value="As." />
+            <input id="kutu1" title="Bilmem ne." value="As." />
+            <input id="kutu1" title="Bilmem ne." value="As." />
         </section>
     </main>
 </body>
