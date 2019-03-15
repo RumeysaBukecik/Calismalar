@@ -10,51 +10,42 @@
 namespace Asp_Net {
     
     
-    public partial class Sinema {
+    public partial class Salon1 {
         
         /// <summary>
-        /// DataList_Filmler control.
+        /// DataList_Salonlar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList_Filmler;
+        protected global::System.Web.UI.WebControls.DataList DataList_Salonlar;
         
         /// <summary>
-        /// txt_FilmAd control.
+        /// txt_SalonAd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_FilmAd;
+        protected global::System.Web.UI.WebControls.TextBox txt_SalonAd;
         
         /// <summary>
-        /// txt_FilmFragman control.
+        /// txt_SalonTest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_FilmFragman;
+        protected global::System.Web.UI.WebControls.TextBox txt_SalonTest;
         
         /// <summary>
-        /// txt_FilmKisaBilgi control.
+        /// btn_SalonKaydet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_FilmKisaBilgi;
-        
-        /// <summary>
-        /// btn_FilmKaydet control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_FilmKaydet;
+        protected global::System.Web.UI.WebControls.Button btn_SalonKaydet;
     }
 }

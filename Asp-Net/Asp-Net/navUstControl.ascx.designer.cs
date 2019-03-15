@@ -31,12 +31,21 @@ namespace Asp_Net {
         protected global::System.Web.UI.WebControls.HyperLink LinkSinema;
         
         /// <summary>
-        /// Linkİletisim control.
+        /// LinkSalon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink Linkİletisim;
+        protected global::System.Web.UI.WebControls.HyperLink LinkSalon;
+        
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
