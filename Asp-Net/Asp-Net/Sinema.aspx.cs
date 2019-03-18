@@ -97,7 +97,7 @@ namespace Asp_Net
             // Editleme ekranını kapatır.
             DataList_Filmler.EditItemIndex = -1;
 
-            //Tabloyu günceller
+            //Tabloyu günceller.
             Tablo_Cek();
         }
     }

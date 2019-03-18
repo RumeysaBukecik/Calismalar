@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="rumbotecik.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .banner {
+            background-color: #424b55;
+            height: 86px;
+        }
+
+        .social-bar {
+            color: #cc2f17;
+            float: left;
+            list-style: none;
+        }
+
+            .social-bar > li {
+                float: left;
+                padding: 15px 10px;
+                font-size: 24px;
+            }
+
+                .social-bar > li:hover {
+                    color: #e35a01;
+                }
+
+        .logo {
+            float: left;
+        }
+
+            .logo > img {
+                position: relative;
+                left: 300px;
+                top: 18px;
+                height: 50px;
+            }
+
+        .search {
+            float: right;
+            line-height: 86px;
+        }
+
+        .search-input {
+            padding: 10px;
+            margin: 10px 20px;
+            border-radius: 3px;
+            overflow: hidden;
+            border: none;
+            -webkit-box-shadow: -2px -1px 15px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px -1px 15px -1px rgba(0,0,0,0.75);
+            box-shadow: -2px -1px 15px -1px rgba(0,0,0,0.75);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="social-icon">
+                    <ul class="social-bar">
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <img src="https://cdn-images-1.medium.com/max/1600/1*PZEZ0KKLRQS3ueyPLTFCsw.png" />
+                </div>
+                <div class="search">
+                    <input type="text" name="s" class="search-input" placeholder="Arama" />
+                </div>
+            </div>
+        </div>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
