@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="kullanici_giris">
+    <section class="kullanici_kayit">
         <asp:TextBox ID="txt_KullaniciAdSoyad" runat="server" placeholder="Kullanıcı Ad Soyad: "></asp:TextBox>
         <input type="date" id="input_KullaniciDogumTarihi" runat="server" value="1990.01.01" />
         
