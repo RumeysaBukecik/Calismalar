@@ -48,6 +48,7 @@ namespace rumbotecik
             BLOGEntities db = new BLOGEntities();
             db.Kullanicis.Add(k1);
             db.SaveChanges();
+            Response.Redirect("index.aspx");
         }
     }
 }

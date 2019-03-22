@@ -123,7 +123,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Site1.Master" />
-    <Content Include="WebUserControl1.ascx" />
+    <Content Include="YaziListele.aspx" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -209,12 +209,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebUserControl1.ascx.cs">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    <Compile Include="YaziListele.aspx.cs">
+      <DependentUpon>YaziListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebUserControl1.ascx.designer.cs">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    <Compile Include="YaziListele.aspx.designer.cs">
+      <DependentUpon>YaziListele.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

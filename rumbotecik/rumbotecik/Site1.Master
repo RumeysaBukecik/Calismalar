@@ -1,15 +1,14 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="rumbotecik.Site1" %>
 
-<%@ Register Src="~/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
-
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr-TR">
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
         body {
@@ -69,6 +68,53 @@
             -moz-box-shadow: -2px -1px 15px -1px rgba(0,0,0,0.75);
             box-shadow: -2px -1px 15px -1px rgba(0,0,0,0.75);
         }
+
+        .menu {
+            background-color: #CC2F34;
+            height: 34px;
+        }
+
+        .oturum {
+            position: absolute;
+            right: 12%;
+        }
+
+        .navbar {
+            position: absolute;
+            left: 0px;
+        }
+
+            .navbar > ul, .oturum > ul {
+                position: relative;
+                margin: 0px auto;
+                list-style: none;
+                line-height: 34px;
+            }
+
+                .navbar > ul > li, .oturum > ul > li {
+                    float: left;
+                    font-size: 12px;
+                }
+
+                    .navbar > ul > li > a, .oturum > ul > li > a {
+                        color: #fff;
+                        font-weight: bold;
+                        font-family: 'Noto Sans';
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 3px 8px;
+                    }
+
+                        .navbar > ul > li > a:hover, .oturum > ul > li > a:hover {
+                            background-color: #e35a01;
+                            transition: 0.3s;
+                        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +127,7 @@
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-instagram"></i></li>
                         <li><i class="fab fa-youtube"></i></li>
+                        <li><i class="fab fa-linkedin"></i></li>
                     </ul>
                 </div>
                 <div class="logo">
@@ -90,11 +137,26 @@
                     <input type="text" name="s" class="search-input" placeholder="Arama" />
                 </div>
             </div>
-            
+
         </div>
-        <uc1:WebUserControl1 runat="server" id="WebUserControl1" />
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-        </asp:ContentPlaceHolder>
+        <div class="menu">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.aspx">Giriş kapısı, tık</a></li>
+                    <li><a href="#">Hakkımda bazı şeyler, tık</a></li>
+                    <li><a href="#">Bilgilerimin sadakası, tık</a></li>
+                    <li><a href="YaziListele.aspx">Benliğime yolculuk, tık</a></li>
+                    <li><a href="#">Bana ulaşabilirsin, tık</a></li>
+                </ul>
+            </div>
+            <div class="oturum">
+                <ul>
+                    <li><a href="KullaniciKayit.aspx">Kayıt Ol</a></li>
+                    <li><a href="Login.aspx">Giriş</a></li>
+                </ul>
+            </div>
+        </div>
+
         <form id="form1" runat="server">
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>

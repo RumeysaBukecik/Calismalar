@@ -6,7 +6,6 @@
     <section class="kullanici_kayit">
         <asp:TextBox ID="txt_KullaniciAdSoyad" runat="server" placeholder="Kullanıcı Ad Soyad: "></asp:TextBox>
         <input type="date" id="input_KullaniciDogumTarihi" runat="server" value="1990.01.01" />
-        
         <asp:TextBox ID="txt_KullaniciEposta" runat="server" placeholder="E-posta: "></asp:TextBox>
         <asp:TextBox ID="txt_KullaniciParola" runat="server" placeholder="Parola: "></asp:TextBox>
         <asp:FileUpload ID="input_FotoUpload" runat="server" />
