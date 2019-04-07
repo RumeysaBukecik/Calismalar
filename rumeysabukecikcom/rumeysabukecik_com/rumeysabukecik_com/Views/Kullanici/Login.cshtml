@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<form action="/Kullanici/Login" method="post">
+    <input name="KullaniciEposta" type="text" /><br />
+    <input name="KullaniciParola" type="password" /><br />
+    <input id="Button" type="submit" value="Giriş" /><br />
+</form>
+<h1>@ViewBag.Oturum</h1>
+<a href="/Kullanici/Index">İndex sayfası</a>
