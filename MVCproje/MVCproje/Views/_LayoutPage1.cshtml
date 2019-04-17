@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @RenderSection("head", false)
+</head>
+<body<ı>
+    <main class="container bg-info">
+        <section class="row" style="height:150px;">
+            HEADER
+        </section>
+        <section class="row" style="height:50px;">
+            NAV MENU
+        </section>
+        <section class="row">
+            <section class="col-md-2  float-left" style="height:450px;">
+                SİDEBAR
+            </section>
+            <section class="col-md-10 float-left bg-light">
+                @RenderBody()
+            </section>
+        </section>
+        <section class="row">
+            FOOTER
+        </section>
+    </main>
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("javascript", false)
+</body>
+</html>

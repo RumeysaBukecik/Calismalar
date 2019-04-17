@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="KullaniciKayit.aspx.cs" Inherits="rumbotecik.KullaniciKayit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .kullanici_kayit{
+            text-align:center;
+            background-color:bisque;
+        }
+        .kullanici_kayit input{
+            display:block;
+            text-align:center;
+            clear:both;
+            margin:auto;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="kullanici_kayit">

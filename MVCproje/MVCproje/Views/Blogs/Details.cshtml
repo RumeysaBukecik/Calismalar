@@ -1,0 +1,75 @@
+﻿@model MVCproje.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blogİcerik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blogİcerik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogGorselUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogGorselUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogKayitTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogKayitTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogGuncellemeTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogGuncellemeTarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlogAktif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlogAktif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kullanici.KullaniciAdSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici.KullaniciAdSoyad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BlogID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
