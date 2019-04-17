@@ -1,0 +1,14 @@
+<okul>
+  <ogrenci>
+    <Numara>DDD</Numara>
+    <AdSoy>DDD</AdSoy>
+    <Sinif>DDD</Sinif>
+    <DogumTarihi>5 Şubat 2019 Salı</DogumTarihi>
+  </ogrenci>
+  <ogrenci>
+    <Numara>54</Numara>
+    <AdSoy>Rümeysa</AdSoy>
+    <Sinif>12/E</Sinif>
+    <DogumTarihi>18 Şubat 2019 Pazartesi</DogumTarihi>
+  </ogrenci>
+</okul>
